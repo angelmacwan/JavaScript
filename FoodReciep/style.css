@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 1rem;
+}
+
+@media only screen and (max-width: 955px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+#modalLoading {
+  background: #be087b;
+  position: absolute;
+  top: 40%;
+}
+.loading {
+  display: none;
+  transition: 0.4s;
+}
+.limit {
+  position: fixed;
+  bottom: 0px;
+}
+#cau {
+  opacity: 1;
+  transition: 0.8s;
+}
