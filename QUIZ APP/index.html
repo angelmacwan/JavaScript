@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizApp</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <section class="container">
+
+        <div class="NavBar">
+            <p>QUIZFY</p>
+        </div>
+        
+
+        <div class="main">
+
+            <div class="card">
+                <p class="question neo">
+                    QUESTION
+                </p>
+                <br>
+                <p class="options">
+                    <button id="opt1" class="btn neo" onclick="check(0)"> opt1 </button>
+                    <button id="opt2"class="btn neo" onclick="check(1)"> opt2 </button>
+                    <button id="opt3" class="btn neo" onclick="check(0)"> opt2 </button>
+                    
+                </p>
+            </div>
+
+        </div>
+
+        <div class="score neo">
+            SCORE
+        </div>
+
+        <div class="btnOpt neo" onclick="options(1)">
+            +
+        </div>
+
+    </section>
+
+    <section class="menu">
+        <p>CATEGORY</p>
+        <select name="cat" id="category" class="neo">
+            <option value="9">GK</option>
+            <option value="10">BOOKS</option>
+            <option value="11">FILM</option>
+            <option value="12">MUSIC</option>
+            <option value="13">MUSICAL</option>
+            <option value="14">TV</option>
+            <option value="15">VIDEO GAMES</option>
+            <option value="17">SCIENCE</option>
+            <option value="18">COMPUTER</option>
+            <option value="19">MATH</option>
+            <option value="20">MYTHOLOGY</option>
+            <option value="21">SPORT</option>
+            <option value="22">GEO</option>
+            <option value="23">HISTORY</option>
+            <option value="25">ART</option>
+            <option value="27">ANIMALS</option>
+            <option value="29">COMICS</option>
+            <option value="31">ANIME</option>
+            <option value="32">CARTOON</option>
+        </select>
+
+        <select name="difficulty" id="difficulty" class="neo">
+            <option value="easy">easy</option>
+            <option value="medium">medium</option>
+            <option value="hard">hard</option>
+        </select>
+
+        <button class="neo btn" onclick="setParameters()">START</button>
+    </section>
+
+
+    <section id="TRUE" class="check">
+        <p>
+            😁
+        </p>
+    </section>
+    <section id="FALSE" class="check">
+        <p>
+            😕
+        </p>
+    </section>
+
+
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>

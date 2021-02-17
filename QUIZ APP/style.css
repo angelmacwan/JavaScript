@@ -1,0 +1,137 @@
+/* 
+#FC4445 => RED
+#3FEEE6 => TEAL
+#55BCC9 => DARK TEAL
+#97CAEF => BLUISH
+#CAFAFE => WHITE
+*/
+:root{
+    --RED: #FC4445;
+    --TEAL: #3FEEE6;
+    --DARKTEAL: #55BCC9;
+    --BLUISH: #97CAEF;
+    --WHITE: #CAFAFE;
+    --BG: #e0e0e0;
+    --PRIMARY: #888;
+    --SEC: ;
+}
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--BG);
+}
+
+.neo{
+    border-radius: 1rem;
+    background: #e0e0e0;
+    box-shadow:  7px 7px 14px #bebebe,
+                -7px -7px 14px #ffffff;
+}
+.container{
+    
+}
+.NavBar>p{
+    background-color: var(--PRIMARY);
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    color: BLACK;
+}
+
+.question{
+    
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-top: 25%;
+    font-size: 1.5rem;
+}
+
+.btn{
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    padding:0.4rem;
+    display: block;    
+    width: 85%;
+    margin: 1rem auto;
+}
+
+.btnOpt{
+    font-size: 3rem;
+    height:3.1rem;
+    width:3rem;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    right:30px;
+    bottom: 30px;
+    border-radius: 2rem;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    transition: 0.4s;
+    left:200%;
+}
+.menu>p{
+    font-size: 2.5rem;
+    margin: 1.5rem 0.5rem;
+    margin-bottom: 5rem;
+}
+.menu>select{
+    display: block;
+    font-size: 1.2rem;
+    margin: 1.5rem auto;
+    width: 80%;
+    border:none;
+    outline: none;
+    padding: 0.7rem;
+}
+
+.score{
+    font-size: 1.7rem;
+    padding: 1rem;
+    width:fit-content;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+}
+.check{
+    position: fixed;
+    top:0;
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+    transition: 0.4s;
+}
+.check>p{
+    font-size: 10rem;
+    width: fit-content;
+    margin: 5rem auto;
+}
+#TRUE{
+    right:200%;
+}
+#FALSE{
+    right:200%;
+}
+
+@media only screen and (min-width: 500px) {
+    .container{
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    .score{
+        left: 35%;
+    }
+    .btnOpt{
+        /* position: relative; */
+        right:35%;
+    }
+
+}
