@@ -1,12 +1,23 @@
-let index = 2;
+document.querySelector('#p1').style.display = 'block';
+let current_window = 1;
 
-function nextPage() {
-  let loc = `#sec0${index}`;
-  window.location.href = loc;
-  index++;
-  if (index == 5) {
-    index = 1;
-  }
+function logMouse(event) {
+	let width = window.innerWidth;
+	let pressX = event.clientX;
+	if (pressX < width / 3) previousSlide();
+	else nextSlide();
+}
 
-  console.log(loc);
+function nextSlide() {
+	if (current_window >= 6) return;
+	document.querySelector(`#p${current_window}`).style.display = 'none';
+	current_window++;
+	document.querySelector(`#p${current_window}`).style.display = 'block';
+}
+
+function previousSlide() {
+	if (current_window == 1) return;
+	document.querySelector(`#p${current_window}`).style.display = 'none';
+	current_window--;
+	document.querySelector(`#p${current_window}`).style.display = 'block';
 }
