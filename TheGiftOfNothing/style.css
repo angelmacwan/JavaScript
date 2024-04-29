@@ -1,65 +1,38 @@
-/* #4a4e4d • #0e9aa7 • #3da4ab • #f6cd61 • #fe8a71 */
+:root {
+    --dark: #7469B6;
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Fuzzy Bubbles", cursive;
-  scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    font-family: "Shantell Sans", cursive;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
-p {
-  font-size: 1.4rem;
-}
-
-#bg {
-  background: url(https://www.nawpic.com/media/2020/cute-nawpic-75.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-body {
-  overflow: hidden;
-}
 .wrapper {
-  /* width: 100vw; */
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    color: #FFE6E6;
+    background-color: var(--dark);
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
 }
 
-.wrapper > div {
-  width: 80%;
-  padding: 20px;
-  backdrop-filter: blur(10px) saturate(180%);
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(50, 50, 50, 0.3);
+.tap {
+    display: none;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
 }
 
-.btn {
-  background: #fe8a71;
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 12px;
-  border: none;
-  position: fixed;
-  bottom: 40px;
-  right: 20px;
-  z-index: 9;
-}
+.w {
+    line-height: 4rem;
+    user-select: none;
+    overflow: hidden;
 
-#img01 {
-  background: url(https://www.pngarts.com/files/6/Cute-Pig-PNG-Download-Image.png);
-  background-size: cover;
-  background-position: center;
-  height: 150px;
-  width: 150px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
 }
